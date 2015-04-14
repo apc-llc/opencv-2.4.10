@@ -2,6 +2,18 @@
 
 [![Gittip](http://img.shields.io/gittip/OpenCV.png)](https://www.gittip.com/OpenCV/)
 
+#### Building with CUDA & OpenCL support
+
+```
+$ git clone https://github.com/apc-llc/opencv-2.4.10.git
+$ cd opencv-2.4.10
+$ mkdir build
+$ cd build/
+$ cmake -DHAVE_CUDA=TRUE -DHAVE_OPENCL=TRUE -DCMAKE_INSTALL_PREFIX=$(pwd)/../install ..
+$ make -j12
+$ make install
+```
+
 #### Resources
 
 * Homepage: <http://opencv.org>
